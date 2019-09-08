@@ -1,0 +1,175 @@
+.page-section{
+    padding: 150px 0;
+}
+/* navbar */
+@media (min-width: 992px) {
+    #mainNav.navbar-shrink {
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: transparent;
+        background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+    }
+}
+/* Services */
+.page-section#services{
+    color: #fff;
+    background-image: url('../img/bg-services.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+.page-section h2.section-heading {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+
+.card-general-cons{
+    color: #fff;
+    background-color: #0a5150;
+}
+
+.card-stone-tile{
+    color: #fff;
+    background-color: #d19921;
+}
+
+/* About */
+.page-section#about{
+    color: #fff;
+    background-image: url('../img/bg-about.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+.page-section#about .card-about{
+    color: #fff;
+    background-color: #181818;
+    padding: 3rem 1.5rem 3rem 3rem;
+}
+.card-about .card-body{
+    max-height: 500px;
+    overflow: auto;
+    padding: 0 1.5rem 0 0 ;
+}
+
+/* width */
+.card-about .card-body::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+.card-about .card-body::-webkit-scrollbar-track {
+    background: #685a59; 
+    border-radius: 10px;
+}
+
+/* Handle */
+.card-about .card-body::-webkit-scrollbar-thumb {
+    background: #df9f15; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.card-about .card-body::-webkit-scrollbar-thumb:hover {
+    background: #0a5150; 
+}
+
+.card-about .card-subtitle{
+    color: #df9f15;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.card-about .card-subtitle-b{
+    color: #df9f15;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.card-about .card-text{
+    color: #c9cdba;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.position-btm{
+    position: absolute;
+    width: 100%;
+    bottom: 3rem;
+}
+
+/* Our People */
+.page-section#team{
+    /* color: #fff; */
+    background-image: url('../img/bg-team.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+.team-member{
+    border: 1px #c9cdba solid;
+    margin-bottom: 0px;
+}
+
+.team-member img {
+    width: 175px;
+    height: 175px;
+    border: 7px solid rgba(255,255,255,1);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    position: absolute;
+    top: -45px;
+    left: 25%;
+}
+
+.team-member h4 {
+    margin-top: 110px;
+    margin-bottom: 20px;
+    text-transform: none;
+}
+
+/* Contact Us */
+.page-section#contact{
+    color: #fff;
+    background-image: url('../img/bg-contact.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/* Helpers */
+.text-dark-green{
+    color: #0a5150;
+}
+.text-dark-yellow{
+    color: #df9f15;
+}
+.p-bg-color{
+    background-color: #0a5150 !important;
+    color: #fff;
+    padding: 10px;
+}
+
+.s-bg-color{
+    background-color: #df9f15 !important;
+    color: #fff;
+    padding: 10px;
+}
+
+.p-bg-color:hover{
+    background-color: #083a39 !important;
+    color: #fff;
+}
+
+.s-bg-color:hover{
+    background-color: #af7d11 !important;
+    color: #fff;
+}
