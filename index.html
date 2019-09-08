@@ -80,6 +80,12 @@
 
   <!-- Header -->
   <header class="masthead">
+      <div class="overlay"></div>
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <!-- <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4"> -->
+        <!-- <source src="https://storage.googleapis.com/coverr-main/mp4/Mom-And-Son.mp4" type="video/mp4"> -->
+        <source src="https://storage.googleapis.com/coverr-main/mp4/Modem-lights.mp4" type="video/mp4">
+      </video>
     <div class="container">
       <div class="intro-text">
         <div class="intro-lead-in">Welcome To Our Studio!</div>
@@ -100,7 +106,7 @@
       </div>
       <div class="row text-center">
         <div class="col-md-6">
-          <div class="card card-general-cons rounded-0 border-0 p-3">
+          <div class="card card-general-cons rounded-0 border-0 p-3 mb-5">
             <div class="card-body border">
               <img src="img/logos/icon-general-construction.png" alt="" class="p-4">
               <h5 class="card-title service-heading">General Construction</h5>
@@ -110,7 +116,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card card-stone-tile rounded-0 border-0 p-3">
+          <div class="card card-stone-tile rounded-0 border-0 p-3 mb-5">
             <div class="card-body border">
               <img src="img/logos/icon-stone&tile.png" alt="" class="p-4">
               <h5 class="card-title service-heading">Stone and Tile</h5>
@@ -232,7 +238,7 @@
       </div>
       <div class="row">
         <div class="col-lg-8">
-            <div class="card card-about rounded-0 border-0">
+            <div class="card card-about rounded-0 border-0 mb-5">
               <div class="card-body">
                 <h2 class="card-title">Piuser Construction</h2>
                 <h4 class="card-subtitle">A Full-Service Construction Company</h4>
@@ -244,13 +250,13 @@
         </div>
         <div class="col-lg-4">
           <div class="position-btm">
-            <div class="p-bg-color mb-5">
+            <div class="p-bg-color mb-5 p-2">
               <a href="#" class="btn btn-lg btn-block border rounded-0 p-bg-color">
                   <span><img src="img/logos/btn-icon-projects.png" alt="" class=""></span>
                   View All Projects
               </a>
             </div>
-            <div class="s-bg-color">
+            <div class="s-bg-color p-2">
               <a href="#" class="btn btn-lg btn-block border rounded-0 s-bg-color">
                 <span><img src="img/logos/btn-icon-team.png" alt="" class=""></span>
                 The Puiser Team
@@ -275,8 +281,8 @@
         <div class="col-sm-4">
           <div class="card p-3">
             <div class="card-body team-member">
-                <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-                <h4>Kay Garland</h4>
+                <img class="mx-auto rounded-circle" src="img/team/coby.png" alt="">
+                <h4>Coby Vance</h4>
                 <p class="text-muted">Coby graduated from California State Bakersfield with a degree in Business Economics.  Coby joined the Piuser Construction team in 2012 and has been essential in helping us grow into one of the premier construction companies in California.  With Coby’s extensive business knowledge guiding us we look forward to many successful years to come.</p>
                 <div class="contact-details">
                   <a href="mailto:Coby@PiuserConstruction.com" class="contact-email">
@@ -294,13 +300,13 @@
         <div class="col-sm-4">
           <div class="card p-3">
             <div class="card-body team-member">
-                <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-                <h4>Larry Parker</h4>
+                <img class="mx-auto rounded-circle" src="img/team/david.png" alt="">
+                <h4>David Piuser</h4>
                 <p class="text-muted">David has spent a lifetime in the construction industry.  From the time he was a teenager working for his uncle’s tile and stone business to founding and leading our company today, David has the experience and dedication necessary to navigate the often-challenging landscape that is the modern-day construction industry.</p>
                 <div class="contact-details">
-                  <a href="mailto:Coby@PiuserConstruction.com" class="contact-email">
+                  <a href="mailto:David@PiuserConstruction.com" class="contact-email">
                     <i class="fas fa-envelope"></i>
-                    Coby@PiuserConstruction.com
+                    David@PiuserConstruction.com
                   </a>
                   <a href="tel:661-203-4400" class="contact-phone">
                     <i class="fas fa-phone"></i>
@@ -313,13 +319,13 @@
         <div class="col-sm-4">
           <div class="card p-3">
             <div class="card-body team-member">
-                <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-                <h4>Diana Pertersen</h4>
+                <img class="mx-auto rounded-circle" src="img/team/eric.png" alt="">
+                <h4>Eric Moser</h4>
                 <p class="text-muted">Eric joined the company in 2012 with a degree in Construction Management.  After spending his early career in general construction in Colorado and California he has been able to bring a broad perspective and understanding of the needs of all our clients.  With Eric’s strong management skills, we can provide our clients with outstanding service from planning to project deliver. </p>
                 <div class="contact-details">
-                  <a href="mailto:Coby@PiuserConstruction.com" class="contact-email">
+                  <a href="mailto:Eric@PiuserConstruction.com" class="contact-email">
                     <i class="fas fa-envelope"></i>
-                    Coby@PiuserConstruction.com
+                    Eric@PiuserConstruction.com
                   </a>
                   <a href="tel:661-203-4400" class="contact-phone">
                     <i class="fas fa-phone"></i>
@@ -346,43 +352,66 @@
           <form id="contactForm" name="sentMessage" novalidate="novalidate">
             <div class="row">
               <div class="col-lg-6">
-                <div class="form-group">
-                  <input class="form-control" id="name" type="text" placeholder="Full Name *" required="required" data-validation-required-message="Please enter your full name.">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="address" type="text" placeholder="Address" required="required" data-validation-required-message="Please enter your address.">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="zipcode" type="text" placeholder="Zip Code" required="required" data-validation-required-message="Please enter your zip code.">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="state" type="text" placeholder="State" required="required" data-validation-required-message="Please enter your state.">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="phone" type="tel" placeholder="Phone / Mobile *" required="required" data-validation-required-message="Please enter your phone/mobile number.">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" id="message" placeholder="Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
-                  <p class="help-block text-danger"></p>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <input class="form-control" id="name" type="text" placeholder="Full Name *" required="required" data-validation-required-message="Please enter your full name.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                      <div class="form-group">
+                          <input class="form-control" id="address" type="text" placeholder="Address" required="required" data-validation-required-message="Please enter your address.">
+                          <p class="help-block text-danger"></p>
+                        </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <input class="form-control" id="city" type="text" placeholder="City" required="required" data-validation-required-message="Please enter your city.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <input class="form-control" id="zipcode" type="text" placeholder="Zip Code" required="required" data-validation-required-message="Please enter your zip code.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <input class="form-control" id="state" type="text" placeholder="State" required="required" data-validation-required-message="Please enter your state.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <input class="form-control" id="phone" type="tel" placeholder="Phone / Mobile *" required="required" data-validation-required-message="Please enter your phone/mobile number.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <textarea class="form-control" id="message" placeholder="Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div id="success"></div>
+                    <button id="sendMessageButton" class="btn btn-primary px-5 s-bg-color border-0 text-uppercase mb-5" type="submit">Submit</button>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-6">
-                <img src="img/map-img-test.png" alt="" class="img-fluid">
+                  <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Piuser%20Construction%2C%20East%20Drive%2C%20Bakersfield%2C%20CA%2C%20USA&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:auto;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;}</style></div>
               </div>
               <div class="clearfix"></div>
-              <div class="col-lg-12 text-center">
-                <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Submit</button>
-              </div>
+              
             </div>
           </form>
         </div>

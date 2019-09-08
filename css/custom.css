@@ -1,3 +1,38 @@
+/* Header */
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
+
 .page-section{
     padding: 150px 0;
 }
@@ -8,6 +43,11 @@
         padding-bottom: 0;
         background-color: transparent;
         background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+    }
+    .position-btm{
+        position: absolute;
+        width: 100%;
+        bottom: 6rem;
     }
 }
 /* Services */
@@ -28,11 +68,13 @@
 .card-general-cons{
     color: #fff;
     background-color: #0a5150;
+    /* height: 570px; */
 }
 
 .card-stone-tile{
     color: #fff;
     background-color: #d19921;
+    /* height: 570px; */
 }
 
 /* About */
@@ -97,11 +139,7 @@
     margin-bottom: 20px;
 }
 
-.position-btm{
-    position: absolute;
-    width: 100%;
-    bottom: 3rem;
-}
+
 
 /* Our People */
 .page-section#team{
@@ -111,6 +149,11 @@
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
+}
+
+.page-section#team .card{
+    height: 650px;
+    margin-bottom: 3rem;
 }
 
 .team-member{
@@ -143,6 +186,38 @@
     background-position: center center;
     background-size: cover;
 }
+section#contact .form-group {
+    margin-bottom: 15px;
+}
+section#contact .form-group input, section#contact .form-group textarea {
+    padding: 15px;
+}
+section#contact .form-group .form-control {
+    border-radius: 1px;
+}
+section#contact ::-webkit-input-placeholder {
+    font-weight: 700;
+    color: #685a59;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
+}
+
+section#contact :-moz-placeholder {
+    font-weight: 700;
+    color: #685a59;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
+}
+
+section#contact ::-moz-placeholder {
+    font-weight: 700;
+    color: #685a59;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
+}
+
+section#contact :-ms-input-placeholder {
+    font-weight: 700;
+    color: #685a59;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
+}
 
 
 /* Helpers */
@@ -155,13 +230,13 @@
 .p-bg-color{
     background-color: #0a5150 !important;
     color: #fff;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .s-bg-color{
     background-color: #df9f15 !important;
     color: #fff;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .p-bg-color:hover{
