@@ -57,6 +57,9 @@ header .overlay {
     #mainNav .navbar-brand > img{
         height: 50px;
     }
+    .page-section{
+        padding: 50px 0;
+    }
 }
 /* Services */
 .page-section#services{
@@ -146,8 +149,6 @@ header .overlay {
     font-weight: 400;
     margin-bottom: 20px;
 }
-
-
 
 /* Our People */
 .page-section#team{
