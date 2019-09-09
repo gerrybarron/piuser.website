@@ -38,6 +38,9 @@ header .overlay {
 }
 /* navbar */
 @media (min-width: 992px) {
+    #mainNav .navbar-brand > img{
+        height: 100px;
+    }
     #mainNav.navbar-shrink {
         padding-top: 0;
         padding-bottom: 0;
@@ -48,6 +51,11 @@ header .overlay {
         position: absolute;
         width: 100%;
         bottom: 6rem;
+    }
+}
+@media (max-width: 991.98px) {
+    #mainNav .navbar-brand > img{
+        height: 50px;
     }
 }
 /* Services */
@@ -152,7 +160,7 @@ header .overlay {
 }
 
 .page-section#team .card{
-    height: 650px;
+    /* height: 650px; */
     margin-bottom: 3rem;
 }
 
@@ -166,13 +174,10 @@ header .overlay {
     height: 175px;
     border: 7px solid rgba(255,255,255,1);
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-    position: absolute;
-    top: -45px;
-    left: 25%;
+    margin-top: -80px;
 }
 
 .team-member h4 {
-    margin-top: 110px;
     margin-bottom: 20px;
     text-transform: none;
 }
@@ -219,6 +224,42 @@ section#contact :-ms-input-placeholder {
     font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
 }
 
+/* Footer */
+.footer {
+    background-color: #181818;
+    border-top: 10px #083a39 solid;
+    color: #fff;
+}
+
+.footer span.copyright {
+    font-size: 0.8rem;
+    line-height: 0;
+    text-transform: none;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+}
+.footer .ftr-term-privacy, .footer .ftr-term-privacy > a{
+    color: #797979;
+    font-size: .7rem;
+}
+.footer .ftr-terms{
+    margin-right: 10px;
+}
+.footer .ftr-privacy{
+    margin-left: 10px;
+}
+
+.footer .footer-details.fd-left{
+    text-align: left;
+}
+.footer .footer-details.fd-right{
+    text-align: right;
+}
+
+@media (max-width: 767px) {
+    .footer .footer-details{
+        text-align: center !important;
+    }
+}
 
 /* Helpers */
 .text-dark-green{
