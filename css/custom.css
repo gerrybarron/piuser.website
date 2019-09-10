@@ -88,6 +88,43 @@ header .overlay {
     /* height: 570px; */
 }
 
+/* Porfolio */
+.page-section#portfolio{
+    color: #fff;
+    background-image: url('../img/bg-projectclient.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+.page-section#portfolio .section-heading{
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+.page-section#portfolio .section-subheading{
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    font-style: normal;
+}
+.page-section#portfolio .carousel-container{
+    background-color: #fff;
+    padding: 20px 20px calc(115px + 1vw) 20px;
+}
+.page-section#portfolio ol.carousel-indicators{
+    z-index: 15 !important;
+    margin-top: 76%;
+    bottom: unset;
+}
+.page-section#portfolio ol.carousel-indicators li{
+    width: 100px;
+    height: auto;
+}
+.page-section#portfolio .carousel-control-next-icon, .page-section#portfolio .carousel-control-prev-icon{
+    width: 75px;
+    height: 75px;
+}
+
 /* About */
 .page-section#about{
     color: #fff;
