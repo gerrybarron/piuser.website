@@ -1,3 +1,47 @@
+/* Navbar */
+@media (min-width: 992px) {
+    #mainNav.navbar-shrink .header-nav-contact{
+        margin-bottom: -55px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .header-nav-contact {
+        display: none!important
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .header-nav-contact {
+        display: none!important
+    }
+}
+.header-nav-contact{
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: -45px;
+}
+.header-nav-contact .h-social-icons,
+.header-nav-contact .h-address,
+.header-nav-contact .h-tel{
+    padding: 10px 0;
+    float: right;
+    margin-left: 3rem;
+    color: #fff;
+}
+
+.header-nav-contact .h-address a,
+.header-nav-contact .h-tel a{
+    color: #bababa;
+}
+
+.header-nav-contact .h-social-icons ul.h-social-buttons li a{
+    font-size: 20px;
+    display: block;
+    color: #fff;
+    line-height: 0px;
+}
+
 /* Header */
 header.h-video {
     position: relative;
@@ -45,6 +89,13 @@ header.h-video .overlay {
     background-color: black;
     opacity: 0.5;
     z-index: 1;
+  }
+
+  header .header-title{
+      font-size: 2rem;
+      font-family: 'Cinzel', serif;
+      word-spacing: 5px;
+    font-weight: 100;
   }
   @media (pointer: coarse) and (hover: none) {
     header.h-video {
