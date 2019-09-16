@@ -42,6 +42,15 @@
     line-height: 0px;
 }
 
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: .75em 0;
+    letter-spacing: 1px;
+    color: #bababa;
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* Header */
 header.h-video {
     position: relative;
@@ -144,9 +153,10 @@ header.h-video .overlay {
     background-size: cover;
 }
 .page-section h2.section-heading {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 0;
     margin-bottom: 4rem;
+    font-weight: 400;
 }
 
 .card-general-cons{
@@ -179,6 +189,7 @@ header.h-video .overlay {
     font-size: 1.2rem;
     margin-bottom: 3rem;
     font-style: normal;
+    font-family: 'Montserrat', sans-serif;
 }
 .page-section#portfolio .carousel-container{
     background-color: #fff;
@@ -302,6 +313,11 @@ header.h-video .overlay {
     background-position: center center;
     background-size: cover;
 }
+section#contact h2.section-heading{
+    font-size: 1.7rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
 section#contact .form-group {
     margin-bottom: 15px;
 }
@@ -379,6 +395,17 @@ section#contact :-ms-input-placeholder {
 .text-dark-yellow{
     color: #df9f15;
 }
+.text-darker-yellow{
+    color: #c9cdba;
+}
+.text-dark-brown{
+    color: #756968;
+}
+
+.text-lh-20{
+    line-height: 20px;
+}
+
 .p-bg-color{
     background-color: #0a5150 !important;
     color: #fff;
