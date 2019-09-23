@@ -332,6 +332,13 @@ header.h-video .overlay {
     margin-bottom: 3rem;
 }
 
+.page-section#team h2.section-heading{
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 5rem;
+    font-weight: 700;
+}
+
 .team-member{
     border: 1px #c9cdba solid;
     margin-bottom: 0px;
