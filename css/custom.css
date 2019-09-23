@@ -175,17 +175,17 @@ header.h-video .overlay {
     .portfolio-modal .modal-content{
         padding: 70px 0;
     }
-    .portfolio-modal .modal-content img{
+    .portfolio-modal .modal-content img.modal-img-portfolio{
         width: 130px !important;
     }
     #carouselProjects ol.carousel-indicators {
         z-index: 15 !important;
-        margin-top: 55%;
+        margin-top: 56% !important;
         bottom: unset;
     }
     .page-section#portfolio ol.carousel-indicators {
         z-index: 15 !important;
-        margin-top: 58%;
+        margin-top: 58% !important;
         bottom: unset;
     }
 }
