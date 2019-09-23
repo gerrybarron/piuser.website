@@ -221,11 +221,11 @@ header.h-video .overlay {
 }
 .page-section#portfolio ol.carousel-indicators{
     z-index: 15 !important;
-    margin-top: 76%;
+    margin-top: 51%;
     bottom: unset;
 }
 .page-section#portfolio ol.carousel-indicators li{
-    width: 100px;
+    width: 175px;
     height: auto;
 }
 .page-section#portfolio .carousel-control-next-icon, .page-section#portfolio .carousel-control-prev-icon{
@@ -412,6 +412,53 @@ section#contact :-ms-input-placeholder {
     }
 }
 
+/* Carousel Modal for Projects */
+#carouselProjects .carousel-inner .carousel-item .carousel-caption{
+    width: 100%;
+    right: 0;
+    left: 0;
+    color: #47370c;
+    background-color: #fff;
+    padding: 20px 20px;
+    bottom: 0px;
+}
+#carouselProjects .carousel-inner{
+    border: 1px #756968 solid;
+}
+#carouselProjects .carousel-inner{
+    border: 1px #756968 solid;
+}
+.portfolio-modal .modal-content #carouselProjects img{
+    margin-bottom: 0;
+}
+
+#carouselProjects ol.carousel-indicators {
+    z-index: 15 !important;
+    margin-top: 52%;
+    bottom: unset;
+}
+#carouselProjects ol.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border: 2px #c8c8c8 solid;
+    border-radius: 30px;
+    background-color: #fff;
+    margin-right: 9px;
+    margin-left:9px;
+}
+#carouselProjects ol.carousel-indicators li.active{
+    width: 10px;
+    height: 10px;
+    border: 2px #fdca40 solid;
+    border-radius: 30px;
+    background-color: #fdca40;
+}
+
+#carouselProjects .carousel-control-next-icon, #carouselProjects .carousel-control-prev-icon{
+    width: 50px;
+    height: 50px;
+}
+
 /* Helpers */
 .text-dark-green{
     color: #0a5150;
@@ -439,6 +486,11 @@ section#contact :-ms-input-placeholder {
 .s-bg-color{
     background-color: #df9f15 !important;
     color: #fff;
+    /* padding: 10px; */
+}
+.s-bg-color-brown-text{
+    background-color: #df9f15 !important;
+    color: #47370c;
     /* padding: 10px; */
 }
 
